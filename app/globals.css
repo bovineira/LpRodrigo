@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-text antialiased;
+  }
+}
+
+@layer utilities {
+  .glassmorphism {
+    background: rgba(12, 24, 46, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(135deg, rgba(12, 24, 46, 0.95) 0%, rgba(12, 24, 46, 0.85) 100%);
+  }
+}
+
+
+
