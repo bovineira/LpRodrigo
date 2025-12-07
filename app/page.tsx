@@ -1,5 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import CompaniesCarousel from '@/components/CompaniesCarousel'
 import AuthoritySection from '@/components/AuthoritySection'
 import ServicesSection from '@/components/ServicesSection'
 import ContactForm from '@/components/ContactForm'
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <CompaniesCarousel />
       <AuthoritySection />
       <ServicesSection />
       <ContactForm />
@@ -19,6 +21,8 @@ export default function Home() {
     </main>
   )
 }
+
+
 
 
 

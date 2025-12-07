@@ -24,7 +24,27 @@
   .gradient-overlay {
     background: linear-gradient(135deg, rgba(12, 24, 46, 0.95) 0%, rgba(12, 24, 46, 0.85) 100%);
   }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+    width: fit-content;
+  }
+
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
 }
+
+
 
 
 
