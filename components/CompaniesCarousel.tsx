@@ -14,8 +14,8 @@ const companies = [
     logo: '/2.webp',
   },
   {
-    name: 'Empresa Parceira',
-    logo: '/3.webp',
+    name: 'Metrika Engenharia',
+    logo: '/metrikanovo.png',
   },
   {
     name: 'Empresa Parceira',
