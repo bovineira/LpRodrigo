@@ -4,11 +4,13 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 
-const companies = [
-  {
-    name: 'Empresa Parceira',
-    logo: '/1.webp',
-  },
+interface Company {
+  name: string
+  logo: string
+  isBlack?: boolean
+}
+
+const companies: Company[] = [
   {
     name: 'Empresa Parceira',
     logo: '/2.webp',
@@ -24,6 +26,20 @@ const companies = [
   {
     name: 'Empresa Parceira',
     logo: '/6.webp',
+  },
+  {
+    name: 'Faz Mais',
+    logo: '/fazmais.png',
+    isBlack: true,
+  },
+  {
+    name: 'GerTaxi',
+    logo: '/gertaxi.png',
+  },
+  {
+    name: 'Beauty',
+    logo: '/beauty.png',
+    isBlack: true,
   },
 ]
 
@@ -71,6 +87,7 @@ export default function CompaniesCarousel() {
                         alt={company.name}
                         fill
                         className="object-contain"
+                        style={company.isBlack ? { filter: 'brightness(0)' } : undefined}
                         loading={index < 5 ? "eager" : "lazy"}
                         onError={() => handleImageError(index)}
                         unoptimized
